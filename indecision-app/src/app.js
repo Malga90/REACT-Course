@@ -1,11 +1,5 @@
-"use strict";
-
 // JSX JavaScript XML
-var template = React.createElement(
-  "h1",
-  null,
-  "Indecision app"
-);
+var template = <h1>Indecision app</h1>;
 var appRoot = document.getElementById("app");
 
 ReactDOM.render(template, appRoot);
