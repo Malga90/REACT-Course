@@ -5,7 +5,7 @@
 var app = {
   title: "Indecision app",
   subtitle: "Put your life in the hands of a computer",
-  options: []
+  options: ["One", "Two"]
 };
 var template = React.createElement(
   "div",
