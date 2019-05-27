@@ -1,6 +1,4 @@
-"use strict";
-
-var square = function square(x) {
+const square = function(x) {
   return x * x;
 };
 
@@ -8,23 +6,19 @@ var square = function square(x) {
 //   return x * x;
 // };
 
-var squareArrow = function squareArrow(x) {
-  return x * x;
-};
+const squareArrow = x => x * x;
 
 console.log(square(4));
 console.log(squareArrow(10));
 
 // Challenge
 
-var getFirstName = function getFirstName(fullName) {
+const getFirstName = fullName => {
   return fullName.split(" ")[0];
 };
 
 console.log(getFirstName("Malga 90"));
 
-var getFirstName2 = function getFirstName2(fullName) {
-  return fullName.split(" ")[0];
-};
+const getFirstName2 = fullName => fullName.split(" ")[0];
 
 console.log(getFirstName2("Kowal Kowalski"));
