@@ -1,7 +1,5 @@
-// install -> import -> use
-
 import React from "react";
 import ReactDOM from "react-dom";
+import IndecisionApp from "./components/IndecisionApp";
 
-const template = React.createElement("h1", {}, "bhiacbhib");
-ReactDOM.render(template, document.getElementById("app"));
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));
