@@ -1,11 +1,7 @@
-// import "./utils.js";
-// import { square, add } from "./utils.js";
+// install -> import -> use
 
-// console.log("app.js is running!!!");
-// console.log(square(4));
-// console.log(add(4, 216));
+import React from "react";
+import ReactDOM from "react-dom";
 
-console.log(isAdult(18));
-console.log(canDrink(15));
-
-import { isAdult, canDrink } from "./person.js";
+const template = React.createElement("h1", {}, "bhiacbhib");
+ReactDOM.render(template, document.getElementById("app"));
