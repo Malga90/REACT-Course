@@ -89,7 +89,7 @@ const demoState = {
   expenses: [
     {
       id: "hfcusfui",
-      description: "JAnuary rent",
+      description: "January rent",
       note: " This is the final payment for this address",
       amount: 54500,
       createAt: 0
