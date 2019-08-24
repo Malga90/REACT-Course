@@ -1,46 +1,33 @@
-// Object desctucturing
+console.log("nanannanan");
 
 const person = {
-  name: "Małga",
-  age: 28,
+  name: "Malga",
+  age: 30,
   location: {
-    //city: "London",
-    temp: 22
+    city: "London",
+    temp: 81
   }
 };
 
-const { name: firstName = "JAne Doe", age } = person;
+const { name: firstName = "Jane", age } = person;
 // const name = person.name;
 // const age = person.age;
 
-// console.log(`${firstName} is ${age}.`);
+console.log(`${firstName} is ${age}`);
 
-// const { city, temp: temperature } = person.location;
-// if (city && temperature) {
-//   console.log(`It's ${temperature} in ${city}`);
-// }
+const { city, temp: temperature } = person.location;
+if (city && temperature) {
+  console.log(`It is ${temperature} in ${city}`);
+}
 
 const book = {
-  name: "Harry Potter",
-  author: "J. K. Rowling",
+  title: "Ego is the enemy",
+  author: "Tyler Holiday",
   publisher: {
-    name: "Media"
+    name: "Penguin"
   }
 };
 
-const { name: publisherName = "Self-published" } = book.publisher;
+const { name: publisherName = "Self- Published" } = book.publisher;
 
-if (publisherName) {
-  console.log(publisherName);
-}
-
-// Array descucturing
-
-const address = ["1299 Jupiter Street", "Philapelphia", "Pennsylvnia", "19478"];
-const [, city, state = "NY"] = address;
-console.log(`You are in ${city} ${state}.`);
-
-const item = ["Coffee", "$2.20", "$2.50", "$2.75"];
-
-const [selledItem = "Cheese", , medium] = item;
-console.log(`A medium ${selledItem} costs ${medium}`);
+console.log(publisherName);
