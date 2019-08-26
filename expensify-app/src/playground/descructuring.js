@@ -36,9 +36,7 @@ console.log(publisherName);
 /// ARRAY DESCRUCTURING
 
 const address = ["1299 South Juniper Street", "NYC", "New York", "19147"];
-
 const [, city, state = "Pensylvania"] = address;
-
 console.log(`You are in ${city}, ${state}`);
 
 const item = ["Coffee", "$1.8", "$2.1", "$2.5"];
