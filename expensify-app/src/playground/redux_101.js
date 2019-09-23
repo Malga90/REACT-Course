@@ -62,5 +62,3 @@ store.dispatch(resetCount());
 store.dispatch(decrementCount({ decrementBy: 10 }));
 
 store.dispatch(setCount({ count: 105 }));
-
-console.log("małdzia super dj!");
