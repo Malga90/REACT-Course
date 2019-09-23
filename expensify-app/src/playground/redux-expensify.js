@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from "redux";
+import uuid from "uuid";
 
 // ADD_EXPENSE
 // EDIT_EXPENSE
@@ -20,9 +21,10 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
 };
 
 // Filters reducer
+
 const filtersReducerDefaultState = {
   text: "",
-  sortBy: "data",
+  sortBy: "date",
   startDate: undefined,
   endDate: undefined
 };
@@ -41,6 +43,7 @@ const store = createStore(
     filters: filtersReducer
   })
 );
+
 console.log(store.getState());
 
 const demoState = {
